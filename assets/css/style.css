@@ -217,15 +217,15 @@ a{text-decoration: none;}
   }
 
 /* Footer */
-    .footer{
+    footer{
         background-color: #01012a;
         color: white;
         font-size: smaller;
         height: 50px;
         line-height: 3rem;
-        margin-top: 3rem;
-        position: fixed;
-        bottom: 0;
+        margin-top: 1rem;
+        /* position: fixed; */
+        /* bottom: 0; */
         text-align: center;
         width: 100%;}
 
@@ -268,4 +268,3 @@ a{text-decoration: none;}
         }
         }
 /* END - - - RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE - - - END */
-
