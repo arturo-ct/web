@@ -1,0 +1,271 @@
+@import url(reset.css);
+@import url(grid.css);
+@import url(lightbox.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap');
+
+html{
+    background-color: #fbfbfd;
+    font-family: Poppins;}
+a{text-decoration: none;}
+
+/* Header */
+    header{
+        align-content: center;
+        background-color: #01012a;
+        display: flex;
+        height: 3rem;
+        justify-content: center;
+        position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        width: 100%;
+        z-index: 999;}
+
+/* Nav Bar */
+    nav{
+        align-items: center;
+        /* background-color: #01012a; */
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;}
+    nav img{
+            display: block;
+            height: 40px;}
+    nav a{
+        color: white;
+        font-size: smaller;
+        padding: 10px;
+        text-transform: capitalize;
+        width: 145px;}
+    nav a:hover{color: #dfdfe1;}
+
+/* Sections 1 & 2 */
+    .Sec1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px;
+        gap: 10px;
+        /* justify-items: stretch; */
+        margin: auto;
+        width: 95%;}
+    
+    .Sec2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px;
+        gap: 10px;
+        /* justify-items: stretch; */
+        margin: auto;
+        width: 95%;
+    }
+
+    /* Div attributes */
+    div{
+        display: grid;
+        align-content: center;
+        border-radius: 5px;
+        color: white;
+        justify-content: center;}
+
+/* Animation Section */
+    .fib{
+        animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) .003s both}
+        @keyframes fade-in-bottom{
+        0%{transform:translateY(50px);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+/* Div1 */
+    .div1{
+        border: thin solid #01012a;
+        display: grid;
+        justify-content: center;
+        margin-top: 4.5rem;
+        padding: 1rem;
+        text-align: center;}
+
+/* H1 */
+    .div1 .arturo{
+        color: #01012a;
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: .8;
+        margin-top: 1rem;}
+
+/* Text stroke */
+    .div1 .collado{
+        -webkit-text-stroke: 1px #01012a;
+        -webkit-text-fill-color: #fbfbfd;}
+    .hr-div1{
+        border: 1px solid #01012a;
+        border-radius: 5px;
+        width: 75%;}
+
+/* Concepteur */
+    .div1 h2{
+    color: #01012a;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;}
+
+/* Links in div1 */
+    .div1 a{
+        color: #06c;
+        line-height: 1em;}
+
+/* Div2 & Profile pic */
+    .div2{
+        background-color: #01012a;
+        margin-top: 4.5rem;}
+    .div2 img{
+        display: block;
+        height: 250px;
+        margin: auto;}
+
+/* Section #2 */
+    .Sec2{
+        grid-template-columns: 1fr;
+        background-color: #01012a;
+        border-radius: 5px;
+        /* height: 25rem; */
+        margin-top: 1rem;
+        padding: 0 2rem;}
+    .div3 p{
+        font-size: 5vmin;
+        font-weight: 800;
+        line-height: .9;}
+    .div3 a{
+        color: #06c;
+        margin-top: 1rem;
+        line-height: em;}
+    .hr-sec2{
+        border: 1px solid hotpink;
+        border-radius: 5px;
+        width: 100%;}
+
+/* Section 3 */
+    .h3-port{
+        align-items: center;
+        color: #01012a;
+        font-size: 3rem;
+        font-weight: 700;
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: 70px;
+        justify-items: center;}
+
+    .Sec3{
+        /* background-color: #f5f5f7; */
+        border-radius: 5px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-columns: 150px 150px 150px 150px 150px; */
+        grid-auto-rows: 8vh;
+        /* grid-template-rows: 150px 150px; */
+        justify-content: center;
+        margin: auto;
+        padding: 1rem 0;
+        width: 95%;}
+
+    .d01{
+        align-items: center;
+        border: 1px solid #01012a;
+        /* background-color: #01012a; */
+        color: #01012a;
+        display: grid;
+        font-weight: 700;
+        grid-column: 1/3;
+        padding: 20px;}
+
+    .d02, .d03, .d04, .d05, .d06, .d07, .d08{
+        background-color: #01012a;
+        border: .5px solid #01012a;
+        border-radius: 5px;
+        display: grid;
+        padding:10px}
+    .d02:hover, .d03:hover, .d04:hover, .d05:hover, .d06:hover, .d07:hover, .d08:hover{
+        background-color: white;
+        color: #01012a;
+        transition: all .9s;}
+
+.bef-gal{
+    border: thin solid #01012a;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 95%;
+}
+
+/* Galerie */
+
+.galerie{
+    background-color: #01012a;
+    /* border: thin solid #01012a; */
+    /* border-radius: 5px; */
+    display: grid;
+    height: 350px;
+    margin: auto;
+    margin-bottom: -32px;
+    width: 95%;
+  }
+  
+  .gal-fig{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    /* gap: .5rem; */
+    /* margin: .5rem; */
+    overflow: hidden;
+  }
+
+/* Footer */
+    .footer{
+        background-color: #01012a;
+        color: white;
+        font-size: smaller;
+        height: 50px;
+        line-height: 3rem;
+        margin-top: 3rem;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;}
+
+/* START - - - RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE - - - START */
+    @media (max-width:1400px){
+          .container3{
+            display: flex;
+            flex-wrap: wrap;
+            height: 60vh;}
+        }
+    @media (max-width:745px){
+        .Sec1{
+            grid-auto-rows: 30vh;
+            grid-template-columns: 1fr;}
+        .div1{
+            background-color: #fbfbfd;
+            height: 460px;
+            margin-top: -12.5rem;}
+        .div2 img{
+            z-index: 99;}
+        .div2{
+            order:-1;
+            margin-top: 4.5rem;}
+        .Sec2{
+            margin-top: 1rem;
+            margin-bottom: 5rem;}
+        .Sec3{
+            grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+            grid-auto-rows: 1fr;}
+        .Sec3{
+            display: flex;
+            flex-direction: column;}
+        .container3{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 60vh;}
+        footer{
+
+        }
+        }
+/* END - - - RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE - - - END */
+
